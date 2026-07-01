@@ -90,39 +90,34 @@ body{
 
 
 
-.corner{
-    position:fixed;
-    width:90px;
-    height:90px;
-    background-repeat:no-repeat;
-    background-size:contain;
-    z-index:999;
 }
 
-.top-left{
-    top:20px;
-    left:20px;
-    background-image:url("c:\Users\kleoe\Downloads\cornertop.png");
+.corner {
+    position: absolute;
+    width: 90px;
+    z-index: 1000;
+    pointer-events: none;
 }
 
-.top-right{
-    top:20px;
-    right:20px;
-    background-image:url("c:\Users\kleoe\Downloads\cornertopright.png");
+.top-left {
+    top: 0;
+    left: 0;
 }
 
-.bottom-left{
-    bottom:20px;
-    left:20px;
-    background-image:url("c:\Users\kleoe\Downloads\cornerbottomleft.png");
+.top-right {
+    top: 0;
+    right: 0;
 }
 
-.bottom-right{
-    bottom:20px;
-    right:20px;
-    background-image:url("c:\Users\kleoe\Downloads\cornerbottomright.png");
+.bottom-left {
+    bottom: 0;
+    left: 0;
 }
 
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
 
 
 
@@ -149,7 +144,7 @@ font-size:18px;
     width:600px;
     height:850px;
     background:#fcfaf6;
-    position:center;
+    position:relative;
     border:1px solid #d8c29a;
 }
 
@@ -221,14 +216,14 @@ font-size:18px;
 
 <!-- PAGE 2 -->
 
-
-<div class="corner top-left"></div>
-<div class="corner top-right"></div>
-<div class="corner bottom-left"></div>
-<div class="corner bottom-right"></div>
-
 <div class="page">
 
+    <img src="cornertop.png" class="corner top-left" alt="">
+    <img src="cornertopright.png" class="corner top-right" alt="">
+    <img src="cornerbottomleft.png" class="corner bottom-left" alt="">
+    <img src="cornerbottomright.png" class="corner bottom-right" alt="">
+    
+    
 <div class="section">
 
 <h2>ANTIPASTA / STARTERS</h2>
